@@ -7,7 +7,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect("mongodb://localhost:127.0.0.1:27017/CRUD");
+mongoose.connect("mongodb://127.0.0.1:27017/CRUD");
 
 app.post("/createUser", (req, res) => {
   UserModel.create(req.body)
