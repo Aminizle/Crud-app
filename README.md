@@ -1,4 +1,4 @@
-<h1 align=center>MERN Stack CRUD App</h1>
+<h1 align=center>🌟MERN Stack CRUD App🌟</h1>
 A simple yet powerful CRUD (Create, Read, Update, Delete) application built using the MERN (MongoDB, Express, React, Node.js) stack. This application allows you to manage users, create new users, edit their information, and delete them. It's a perfect starting point for understanding the basics of MERN stack development and building scalable applications.
 
 ## Features
