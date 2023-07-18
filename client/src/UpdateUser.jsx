@@ -44,14 +44,14 @@ function UpdateUsers() {
                 type="text"
                 placeholder="Enter Name"
                 className="form-control"
-                value={name}
+                value={name}                
                 onChange={(e) => setName(e.target.value)}
               />
             </div>
             <div className="mb-2">
               <label htmlFor="">Email</label>
               <input
-                type="text"
+                type="email"
                 placeholder="Enter Email"
                 className="form-control"
                 value={email}
@@ -61,7 +61,7 @@ function UpdateUsers() {
             <div className="mb-2">
               <label htmlFor="">Age</label>
               <input
-                type="text"
+                type="number"
                 placeholder="Enter Age"
                 className="form-control"
                 value={age}

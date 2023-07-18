@@ -15,14 +15,16 @@ function Users() {
   const handleDelete = (id) => {
     axios
       .delete("http://localhost:3001/deleteUser/" + id)
-      .then((res) => {console.log(res)
-        window.location.reload()})
+      .then((res) => {
+        console.log(res);
+        window.location.reload();
+      })
       .catch((errr) => console.log(errr));
   };
   return (
     <div className="d-flex vh-100 bg-primary justify-content-center align-items-center">
       <div className="w-50 bg-white rounded p-3">
-        <Link to="/create" className="btn btn-success">
+        <Link to="/create" className="btn btn-outline-info">
           Add +
         </Link>
         <table className="table">
@@ -44,12 +46,12 @@ function Users() {
                   <td>
                     <Link
                       to={`/update/${user._id}`}
-                      className="btn btn-success"
+                      className="btn btn-outline-success btn-sm"
                     >
                       Update
                     </Link>
                     <button
-                      className="btn btn-danger"
+                      className="btn btn-outline-danger btn-sm"
                       onClick={(e) => handleDelete(user._id)}
                     >
                       Delete
