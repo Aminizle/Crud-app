@@ -89,10 +89,8 @@ Contributions to the MERN Stack CRUD App are always welcome. If you want to cont
 
 This project is licensed under the [MIT License](LICENSE).
 
-&nbsp&nbsp&nbsp
+---
 
 <p align="center">Made with ❤ by Ameen</p>
 
 ---
-
-Feel free to add any other sections or features that you think would make your project's README more informative and eye-catching. Make sure your README reflects the uniqueness and awesomeness of your MERN Stack CRUD App! Happy coding! 🚀
