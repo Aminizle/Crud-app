@@ -48,7 +48,7 @@ function Users() {
                       to={`/update/${user._id}`}
                       className="btn btn-outline-success btn-sm"
                     >
-                      Update
+                      Edit
                     </Link>
                     <button
                       className="btn btn-outline-danger btn-sm"
