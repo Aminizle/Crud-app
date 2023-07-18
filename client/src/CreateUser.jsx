@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 function CreateUsers() {
+  const {id} = useParams()
   const [name, setName] = useState();
   const [email, setEmail] = useState();
   const [age, setAge] = useState();
