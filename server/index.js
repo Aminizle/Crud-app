@@ -26,11 +26,17 @@ app.put("/updateUser/:id", (req, res) => {
   const id = req.params.id;
   UserModel.findByIdAndUpdate(
     { _id: id },
-    { name: req.body.name,
-      email: req.body.email,
-      age: req.body.age }
-  ).then((users) => res.json(users))
-  .catch((err) => res.json(err));
+    { name: req.body.name, email: req.body.email, age: req.body.age }
+  )
+    .then((users) => res.json(users))
+    .catch((err) => res.json(err));
+});
+
+app.delete("/deleteUser/:id", (req, res) => {
+  const id = req.params.id;
+  UserModel.findByIdAndDelete({ _id: id })
+    .then((result) => res.json(result))
+    .catch((err) => res.json(err));
 });
 
 app.post("/createUser", (req, res) => {
